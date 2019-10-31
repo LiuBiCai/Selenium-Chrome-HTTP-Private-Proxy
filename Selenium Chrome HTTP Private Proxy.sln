@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium Chrome HTTP Private Proxy", "Selenium Chrome HTTP Private Proxy\Selenium Chrome HTTP Private Proxy.csproj", "{ADA337F1-73CA-46EB-BACA-E227ACDAFEF5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ADA337F1-73CA-46EB-BACA-E227ACDAFEF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ADA337F1-73CA-46EB-BACA-E227ACDAFEF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ADA337F1-73CA-46EB-BACA-E227ACDAFEF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ADA337F1-73CA-46EB-BACA-E227ACDAFEF5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3C4337AF-E823-4294-B15C-62E84C776E31}
+	EndGlobalSection
+EndGlobal
