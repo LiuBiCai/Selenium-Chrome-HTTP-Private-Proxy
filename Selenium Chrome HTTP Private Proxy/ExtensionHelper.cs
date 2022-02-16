@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace Selenium_Chrome_HTTP_Private_Proxy
 {
-    class ExtensionHelper
+    public class ExtensionHelper
     {
         //Selenium + Chrome 使用用户名密码认证的代理封装
         static string CHROME_PROXY_HELPER_DIR = "Chrome-proxy-helper";  //Chrome代理模板插件目录
