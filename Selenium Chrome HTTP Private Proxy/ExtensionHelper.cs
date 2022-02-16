@@ -21,10 +21,9 @@ namespace Selenium_Chrome_HTTP_Private_Proxy
         /// </summary>
         /// <param name="username"></param>
         /// <param name="password"></param>
-        /// <param name="ip"></param>
-        /// <param name="port"></param>
+        /// <param name="ip">ip:port</param>        
         /// <returns></returns>
-        public static Tuple<bool,string> CreateExtension(string username,string password,string ip,string port)
+        public static Tuple<bool,string> CreateExtension(string username,string password,string ip)
         {
             try
             {
@@ -38,7 +37,7 @@ namespace Selenium_Chrome_HTTP_Private_Proxy
                 {
                     Directory.CreateDirectory(CUSTOM_CHROME_PROXY_EXTENSIONS_DIR);
                 }
-                string extenFilePath = CUSTOM_CHROME_PROXY_EXTENSIONS_DIR+"\\"+ip+port+".zip";
+                string extenFilePath = CUSTOM_CHROME_PROXY_EXTENSIONS_DIR+"\\"+ip.Replace(":","")+".zip";
                 using (FileStream fsOut = File.Create(@extenFilePath))
                 {
                     using (ZipOutputStream zipStream = new ZipOutputStream(fsOut))
