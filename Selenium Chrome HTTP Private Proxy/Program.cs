@@ -12,7 +12,7 @@ namespace Selenium_Chrome_HTTP_Private_Proxy
         static void Main(string[] args)
         {
             var options = new ChromeOptions();
-            Tuple<bool,string> result = ExtensionHelper.CreateExtension("username", "pass", "ip");
+            Tuple<bool,string> result = ExtensionHelper.CreateExtension("user", "pass", "ip:port");
             if(result.Item1)
             {               
                 options.AddExtension(result.Item2);

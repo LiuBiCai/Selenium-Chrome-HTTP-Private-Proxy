@@ -71,7 +71,7 @@ namespace Selenium_Chrome_HTTP_Private_Proxy
                         if (!File.Exists(fileName))
                             return new Tuple<bool, string>(false, "lack background.js");
                         string backGroundContent = File.ReadAllText(fileName);
-                        backGroundContent = backGroundContent.Replace("%proxy_host", ip);
+                        backGroundContent = backGroundContent.Replace("%proxy_host", ip.Split(':')[0]);
                         backGroundContent = backGroundContent.Replace("%proxy_port", ip.Split(':')[1]);
                         backGroundContent = backGroundContent.Replace("%username", username);
                         backGroundContent = backGroundContent.Replace("%password", password);
